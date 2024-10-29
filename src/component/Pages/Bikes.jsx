@@ -23,7 +23,7 @@ const Bikes = () => {
                 </div>
             </div>
 
-{/* 2 */}
+            {/* 2 */}
             <div className="w-[400px] h-[550px] rounded-lg overflow-hidden shadow-lg relative group">
                 <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"

@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from './Navbar';
 import img1 from '../../../public/images/Rectangle 1.png';
-import Carousel from './Carousel';
-import EmblaCarousel from '../js/EmblaCarousel';
+
 import Banner from './Banner';
 import AllCart from './AllCart';
 import Bikes from './Bikes';
 import Footer from './Footer';
+import App from '../../App';
+import World from './World';
+import BlogAndPost from './BlogAndPost';
 
-const OPTIONS = {}
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
 
 const Home = () => {
     return (
@@ -32,13 +32,14 @@ const Home = () => {
                     </div>
                 </div>
             </div> */}
-            {/* <Carousel></Carousel> */}
 
-            {/* <EmblaCarousel slides={SLIDES} options={OPTIONS} /> */}
 
             <Banner></Banner>
             <AllCart></AllCart>
             <Bikes></Bikes>
+            <World></World>
+            <BlogAndPost></BlogAndPost>
+            {/* <App></App> */}
             <Footer></Footer>
         </div>
     );
