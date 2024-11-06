@@ -1,6 +1,3 @@
-
-
-
 /* world map */
 /* .App {
     font-family: sans-serif;
@@ -22,6 +19,12 @@
 .map-selected:hover,
 .map-unselected:hover {
     cursor: pointer;
+}
+
+
+
+.slick-slide>div {
+    margin: 0 10px;
 }
 
 

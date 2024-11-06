@@ -8,7 +8,7 @@ const AllCart = () => {
             {/* left side */}
             <div className='ml-10'>
                 <div>
-                    <p className='text-[60px] font-serif mb-3'>Most searched  used car</p>
+                    <p className='text-6xl font-serif mb-3'>Most searched  used car</p>
 
                     <hr className='w-1/3 border-t-4 border-green-600' />
 

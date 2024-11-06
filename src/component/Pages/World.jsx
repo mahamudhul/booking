@@ -21,7 +21,7 @@ const World = () => {
             {/* right side */}
             <div className='ml-20 flex items-center'>
                 <div className='w-[550px]'>
-                    <p className='text-[60px] font-serif mb-3'>The largest car delareship!</p>
+                    <p className='text-7xl font-serif mb-3'>The largest car dealership!</p>
 
                     <p className='mt-3 mb-8'>Experience the unparalleled choice and a service at car dealers agency, your premier destination.</p>
 

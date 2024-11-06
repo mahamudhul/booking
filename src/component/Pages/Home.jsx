@@ -9,6 +9,9 @@ import Footer from './Footer';
 import App from '../../App';
 import World from './World';
 import BlogAndPost from './BlogAndPost';
+import Review from './Review/Review';
+import Details from './Details';
+import LatestModel from './LatestModel';
 
 
 
@@ -36,10 +39,22 @@ const Home = () => {
 
             <Banner></Banner>
             <AllCart></AllCart>
+
+            <div className='bg-black p-24'>
+                <Details></Details>
+            </div>
+
+            <LatestModel></LatestModel>
+
+            {/* <BlogAndPost></BlogAndPost> */}
             <Bikes></Bikes>
             <World></World>
-            <BlogAndPost></BlogAndPost>
-            {/* <App></App> */}
+
+            <div className=' py-10 rounded-xl w-3/4 mx-auto'>
+                <Review></Review>
+                <h1>here is review</h1>
+            </div>
+
             <Footer></Footer>
         </div>
     );
