@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 
 const Login = () => {
-    const { signInUser,  } = useContext(AuthContext);
+    const { signInUser, } = useContext(AuthContext);
+    const navigate = useNavigate();
 
 
     const handleSubmit = (e) => {
@@ -21,7 +22,7 @@ const Login = () => {
                 e.target.reset();
 
                 // After login automatic go home pages
-                // navigate('/')
+                navigate('/')
             })
             .catch(error => {
                 console.log(error)
@@ -41,8 +42,6 @@ const Login = () => {
 
     return (
         <div>
-            <h1>this is login page</h1>
-
 
             <div className="flex items-center justify-center min-h-screen bg-gray-100 ">
                 <div className="w-full max-w-sm p-6 bg-white rounded-md shadow-md border border-black">

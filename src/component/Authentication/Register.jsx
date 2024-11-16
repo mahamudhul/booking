@@ -1,18 +1,20 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
+    const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const name = e.target.name.value;
         const password = e.target.password.value;
+        const photoUrl = e.target.photo.value;
         // const accepted = e.target.terms.checked;
-        console.log(name, email, password);
+        console.log(name, email, password, photoUrl);
 
         // Create user in firebase 
         createUser(email, password)
@@ -20,6 +22,9 @@ const Register = () => {
                 console.log(result.user);
                 // clean data after login
                 e.target.reset();
+
+                // After login automatic go home pages
+                navigate('/')
             })
             .catch(error => {
                 console.log(error)
@@ -30,7 +35,7 @@ const Register = () => {
 
     return (
         <div>
-            <h1>This is Register page </h1>
+
 
             <div className="flex items-center justify-center min-h-screen bg-gray-100 ">
                 <div className="w-full max-w-sm p-6 bg-white rounded-md shadow-md border border-black">

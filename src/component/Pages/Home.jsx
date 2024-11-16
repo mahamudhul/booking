@@ -12,6 +12,9 @@ import BlogAndPost from './BlogAndPost';
 import Review from './Review/Review';
 import Details from './Details';
 import LatestModel from './LatestModel';
+import Tag from './Tag';
+import Service from './Component/Service';
+import Explore from './Explore';
 
 
 
@@ -40,20 +43,33 @@ const Home = () => {
             <Banner></Banner>
             <AllCart></AllCart>
 
-            <div className='bg-black p-24'>
+            <div className='relative bg-gradient-to-r from-zinc-900 from-10% via-zinc-800 via-30% to-slate-600 to-90% p-24 mt-20'>
                 <Details></Details>
+                <div className='absolute -top-12 
+                right-1/3 mx-auto'>
+                    <Tag></Tag>
+                </div>
             </div>
 
-            <LatestModel></LatestModel>
+            {/* <LatestModel></LatestModel> */}
 
-            {/* <BlogAndPost></BlogAndPost> */}
+
             <Bikes></Bikes>
-            <World></World>
+            {/* <World></World> */}
+
+            <Explore></Explore>
+
+            <div className='py-10 rounded-xl w-4/5 mx-auto'>
+                <World></World>
+                <BlogAndPost></BlogAndPost>
+            </div>
 
             <div className=' py-10 rounded-xl w-3/4 mx-auto'>
-                <Review></Review>
-                <h1>here is review</h1>
+                {/* <Review></Review> */}
             </div>
+
+            <Service></Service>
+
 
             <Footer></Footer>
         </div>

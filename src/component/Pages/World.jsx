@@ -4,7 +4,7 @@ import App from '../../App';
 const World = () => {
     return (
         <div className='grid grid-cols-2 gap-10 my-20'>
-            
+
             {/* left side */}
             <div className='relative'>
 
@@ -21,11 +21,11 @@ const World = () => {
             {/* right side */}
             <div className='ml-20 flex items-center'>
                 <div className='w-[550px]'>
-                    <p className='text-7xl font-serif mb-3'>The largest car dealership!</p>
+                    <p className='text-7xl font-serif mb-3'>The largest Our dealership!</p>
 
-                    <p className='mt-3 mb-8'>Experience the unparalleled choice and a service at car dealers agency, your premier destination.</p>
+                    <p className='mt-3 mb-8'>Experience the unparalleled choice and a service at bike dealers agency, your premier destination.</p>
 
-                    <button className='btn bg-emerald-500 rounded-full text-white px-6 py-3 hover:text-black'>View more car</button>
+                    <button className='btn bg-emerald-500 rounded-full text-white px-6 py-3 hover:text-black'>View more bike</button>
 
                 </div>
             </div>

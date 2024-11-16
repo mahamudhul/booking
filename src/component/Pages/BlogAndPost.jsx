@@ -35,7 +35,7 @@ const BlogAndPost = () => {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
         cssEase: "linear",
@@ -53,7 +53,7 @@ const BlogAndPost = () => {
                 <div >
                     <p className='text-2xl mb-5'>Join 27,000+ companies who’ve reached</p>
                     <div className='text-end'>
-                        <button className='btn text-xl bg-emerald-500 rounded-full text-white px-8 py-2 hover:text-black'>View more car</button>
+                        <button className='btn text-xl bg-emerald-500 rounded-full text-white px-8 py-2 hover:text-black'>View more Bike</button>
                     </div>
                 </div>
             </div>
@@ -77,18 +77,18 @@ const BlogAndPost = () => {
                 </div>
 
                 {/* center */}
-                <div className='col-span-3 flex flex-col gap-12 '>
-                    <div className='text-xl bg-slate-300 rounded-xl p-8'>
-                        <p>20 Jan 2023 * New york</p>
-                        <p className='font-bold mt-3'>Decoding excellence: Your guide to car shopping with car dealers agency</p>
+                <div className='col-span-3 flex flex-col justify-around gap-2 h-full'>
+                    <div className='text-xl bg-slate-300 rounded-xl p-5'>
+                        <p className='text-sm'>20 Jan 2023 * New york</p>
+                        <p className='font-semibold mt-3'>Decoding excellence: Your guide to bike shopping with bike dealers agency</p>
                     </div>
-                    <div className='text-xl bg-slate-300 rounded-xl p-8'>
-                        <p>20 Jan 2023 * New york</p>
-                        <p className='font-bold mt-3'>Decoding excellence: Your guide to car shopping with car dealers agency</p>
+                    <div className='text-xl bg-slate-300 rounded-xl p-5'>
+                        <p className='text-sm'>20 Jan 2023 * New york</p>
+                        <p className='font-semibold mt-3'>Decoding excellence: Your guide to bike shopping with bike dealers agency</p>
                     </div>
-                    <div className='text-xl bg-slate-300 rounded-xl p-8'>
-                        <p>20 Jan 2023 * New york</p>
-                        <p className='font-bold mt-3'>Decoding excellence: Your guide to car shopping with car dealers agency</p>
+                    <div className='text-xl bg-slate-300 rounded-xl p-5'>
+                        <p className='text-sm'>20 Jan 2023 * New york</p>
+                        <p className='font-semibold mt-3'>Decoding excellence: Your guide to bike shopping with bike dealers agency</p>
                     </div>
                 </div>
 
